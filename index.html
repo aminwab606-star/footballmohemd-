@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة تجمع بين كرة القدم والدراسة لجميع المستويات.">
+  <meta name="theme-color" content="#10251d">
+  <title>الكرة والدراسة</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">تجاوز إلى المحتوى الرئيسي</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+
+      <a class="brand" href="#top">
+        <span class="brand-icon">⚽</span>
+        <span class="brand-name">الكرة & الدراسة</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle"
+        type="button" aria-label="فتح القائمة"
+        aria-controls="main-navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-navigation" id="main-navigation">
+        <a href="#home">الرئيسية</a>
+        <a href="#football">كرة القدم</a>
+        <a href="#study">الدراسة</a>
+        <a href="#resources">الدروس والتمارين</a>
+        <a href="#progress">تقدمي</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- الصفحة الرئيسية -->
+    <section class="hero-section" id="home">
+      <div class="container hero-content">
+        <p class="eyebrow">منصة واحدة، شغفان</p>
+
+        <h1>
+          طوّر مستواك في
+          <span>الدراسة</span> و
+          <strong>كرة القدم</strong>
+        </h1>
+
+        <p class="hero-description">
+          تابع كرة القدم واكتشف الدروس والملخصات والتمارين
+          حسب مستواك الدراسي.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#study">اكتشف الدروس</a>
+          <a class="button button-secondary" href="#football">استكشف كرة القدم</a>
+        </div>
+
+        <p class="hero-note">
+          سيتم عرض البيانات المباشرة بعد ربط مصادر موثوقة.
+        </p>
+      </div>
+    </section>
+
+    <!-- قسم كرة القدم -->
+    <section class="section football-section" id="football">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">عالم المستديرة</p>
+            <h2>قسم كرة القدم ⚽</h2>
+            <p>تابع المباريات والنتائج والفرق والبطولات.</p>
+          </div>
+        </div>
+
+        <div class="football-status" id="football-data-status">
+          لم يتم ربط مصدر بيانات مباشر للمباريات بعد.
+          لن نعرض نتائج تجريبية على أنها حقيقية.
+        </div>
+
+        <div class="football-grid">
+
+          <article class="content-card match-panel">
+            <h3>📅 المباريات القادمة</h3>
+            <div class="empty-state" id="upcoming-matches">
+              <p>لا توجد مباريات معروضة حالياً.</p>
+              <small>ستظهر المباريات بعد ربط مصدر موثوق.</small>
+            </div>
+          </article>
+
+          <article class="content-card match-panel">
+            <h3>📡 النتائج المباشرة</h3>
+            <div class="empty-state" id="live-matches">
+              <p>لا توجد نتائج مباشرة متاحة حالياً.</p>
+              <small>لم يتم ربط خدمة النتائج المباشرة بعد.</small>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>🏆 البطولات والترتيب</h3>
+            <div class="empty-state" id="league-standings">
+              <p>بيانات البطولات والترتيب غير متاحة بعد.</p>
+            </div>
+          </article>
+
+          <article class="content-card">
+            <h3>🏃 مهارات كرة القدم</h3>
+            <ul class="feature-list">
+              <li>التحكم في الكرة.</li>
+              <li>التمرير والاستقبال.</li>
+              <li>المراوغة وتغيير الاتجاه.</li>
+              <li>التسديد نحو المرمى.</li>
+              <li>اللعب الجماعي.</li>
+              <li>الإحماء واللياقة البدنية.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الدراسة -->
+    <section class="section study-section" id="study">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">رحلتك التعليمية</p>
+            <h2>اختر مستواك الدراسي 📚</h2>
+            <p>جميع المستويات الدراسية في مكان واحد.</p>
+          </div>
+        </div>
+
+        <div class="level-grid" id="level-list">
+
+          <a class="level-card" href="#resources" data-level="primary-1">
+            <span class="level-icon">🌱</span>
+            <span class="level-title">الابتدائي</span>
+            <span class="level-description">الأول إلى السادس</span>
+          </a>
+
+          <a class="level-card" href="#resources" data-level="middle-1">
+            <span class="level-icon">📘</span>
+            <span class="level-title">الإعدادي</span>
+            <span class="level-description">الأولى إلى الثالثة</span>
+          </a>
+
+          <a class="level-card" href="#resources" data-level="common-core">
+            <span class="level-icon">🎓</span>
+            <span class="level-title">الجذع المشترك</span>
+            <span class="level-description">جميع المسالك</span>
+          </a>
+
+          <a class="level-card" href="#resources" data-level="secondary-1">
+            <span class="level-icon">📗</span>
+            <span class="level-title">الثانوي</span>
+            <span class="level-description">الأولى ثانوي</span>
+          </a>
+
+          <a class="level-card" href="#resources" data-level="bac-1">
+            <span class="level-icon">🏅</span>
+            <span class="level-title">الباكالوريا</span>
+            <span class="level-description">الأولى والثانية باكالوريا</span>
+          </a>
+
+          <a class="level-card" href="#resources" data-level="university">
+            <span class="level-icon">🏛️</span>
+            <span class="level-title">الجامعة</span>
+            <span class="level-description">التخصصات والمسالك</span>
+          </a>
+
+        </div>
+
+        <!-- البحث واختيار المستوى -->
+        <div class="study-filters content-card">
+
+          <h3>🔎 ابحث عن محتوى دراسي</h3>
+
+          <form id="resource-search-form" class="filter-form">
+
+            <div class="form-field">
+              <label for="study-level">المستوى الدراسي</label>
+
+              <select id="study-level" name="level">
+                <option value="">جميع المستويات</option>
+
+                <optgroup label="الابتدائي">
+                  <option value="primary-1">الأول ابتدائي</option>
+                  <option value="primary-2">الثاني ابتدائي</option>
+                  <option value="primary-3">الثالث ابتدائي</option>
+                  <option value="primary-4">الرابع ابتدائي</option>
+                  <option value="primary-5">الخامس ابتدائي</option>
+                  <option value="primary-6">السادس ابتدائي</option>
+                </optgroup>
+
+                <optgroup label="الإعدادي">
+                  <option value="middle-1">الأولى إعدادي</option>
+                  <option value="middle-2">الثانية إعدادي</option>
+                  <option value="middle-3">الثالثة إعدادي</option>
+                </optgroup>
+
+                <optgroup label="الثانوي">
+                  <option value="common-core">الجذع المشترك</option>
+                  <option value="secondary-1">الأولى ثانوي</option>
+                  <option value="bac-1">الأولى باكالوريا</option>
+                  <option value="bac-2">الثانية باكالوريا</option>
+                </optgroup>
+
+                <optgroup label="الجامعة">
+                  <option value="university">التعليم الجامعي</option>
+                </optgroup>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="study-subject">المادة أو التخصص</label>
+
+              <select id="study-subject" name="subject">
+                <option value="">جميع المواد</option>
+                <option value="arabic">اللغة العربية</option>
+                <option value="french">اللغة الفرنسية</option>
+                <option value="english">اللغة الإنجليزية</option>
+                <option value="mathematics">الرياضيات</option>
+                <option value="physics">الفيزياء والكيمياء</option>
+                <option value="life-sciences">علوم الحياة والأرض</option>
+                <option value="history-geography">الاجتماعيات</option>
+                <option value="islamic-education">التربية الإسلامية</option>
+                <option value="computer-science">الإعلاميات</option>
+                <option value="university-major">تخصص جامعي</option>
+              </select>
+            </div>
+
+            <div class="form-field form-field-wide">
+              <label for="resource-search">البحث</label>
+              <input
+                id="resource-search"
+                name="q"
+                type="search"
+                placeholder="اكتب اسم الدرس أو الموضوع..."
+                autocomplete="off"
+              >
+            </div>
+
+            <button class="button button-primary" type="submit">
+              بحث
+            </button>
+
+          </form>
+
+          <p class="form-help" id="search-help">
+            سيتم تفعيل البحث بعد إضافة بيانات المحتوى في JavaScript.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- الدروس والملخصات -->
+    <section class="section resources-section" id="resources">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">تعلم وتمرّن</p>
+            <h2>الدروس والملخصات والتمارين 📝</h2>
+            <p>اختر نوع المحتوى الذي تريد مراجعته.</p>
+          </div>
+        </div>
+
+        <div class="resource-tabs" role="group" aria-label="نوع المحتوى">
+
+          <button class="resource-tab is-active"
+            type="button" data-resource-type="all" aria-pressed="true">
+            الكل
+          </button>
+
+          <button class="resource-tab"
+            type="button" data-resource-type="lessons" aria-pressed="false">
+            الدروس
+          </button>
+
+          <button class="resource-tab"
+            type="button" data-resource-type="summaries" aria-pressed="false">
+            الملخصات
+          </button>
+
+          <button class="resource-tab"
+            type="button" data-resource-type="exercises" aria-pressed="false">
+            التمارين
+          </button>
+
+          <button class="resource-tab"
+            type="button" data-resource-type="quizzes" aria-pressed="false">
+            الاختبارات
+          </button>
+
+        </div>
+
+        <div class="resource-grid" id="resource-list" aria-live="polite">
+          <div class="empty-state">
+            <span>📖</span>
+            <p>لم تتم إضافة الدروس والموارد التعليمية بعد.</p>
+            <small>سيتم إضافة المحتوى في ملف JavaScript.</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- تقدم المستخدم -->
+    <section class="section progress-section" id="progress">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">تابع رحلتك</p>
+            <h2>تقدمي الدراسي 📈</h2>
+            <p>تابع الدروس والأنشطة والنتائج التي أنجزتها.</p>
+          </div>
+        </div>
+
+        <div class="progress-card content-card">
+
+          <div class="progress-placeholder" id="user-progress">
+            <span>💾</span>
+            <div>
+              <h3>حفظ التقدم غير مفعّل بعد</h3>
+              <p>
+                لم يتم ربط قاعدة بيانات أو نظام حسابات بعد.
+                سيتم تفعيل الحفظ بعد إعداد JavaScript وقاعدة البيانات.
+              </p>
+            </div>
+          </div>
+
+          <div class="progress-actions">
+            <a class="text-link" href="#study">العودة إلى الدراسة</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- أسفل الموقع -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <a class="brand" href="#top">
+        <span class="brand-icon">⚽</span>
+        <span class="brand-name">الكرة & الدراسة</span>
+      </a>
+
+      <p>منصة تجمع بين الدراسة وكرة القدم.</p>
+
+      <a href="#top" class="back-to-top">العودة إلى الأعلى ↑</a>
+
+    </div>
+  </footer>
+
+  <noscript>
+    <p>يرجى تفعيل JavaScript للاستفادة من الخصائص التفاعلية.</p>
+  </noscript>
+
+</body>
+</html>
